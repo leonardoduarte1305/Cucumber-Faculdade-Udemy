@@ -16,6 +16,7 @@ Funcionalidade: Tres cenarios de desafio para usar com Expressoes Regulares.
     Dado que o nome do passageiro eh "Cicrano de Oliveira"
     Dado que o telefone do passageiro eh 9888-8888
 
+  @ignore
   Cenario: Deve negar todos os steps "Dado" dos cenarios anteriores
     Dado que o ticket eh CD123
     Dado que o ticket eh AG1234
