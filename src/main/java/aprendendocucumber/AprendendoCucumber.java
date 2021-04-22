@@ -13,7 +13,7 @@ import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
 
-public class AprenderCucumber {
+public class AprendendoCucumber {
 
 	@Dado("^que criei o arquivo corretamente$")
 	public void queCrieiOArquivoCorretamente() throws Throwable {
@@ -48,7 +48,10 @@ public class AprenderCucumber {
 
 	// =========================================================================================================
 
-	Date entrega = new Date();
+//	@Dado("^que o prazo eh dia (.*)$")
+//	public void queOPrazoEhDia(@Transform(DateConverterAula15.class) Date data) throws Throwable {
+//		entrega = data;
+//	}							-> Outra forma de fazer o método abaixo.
 
 	@Dado("^que o prazo eh dia (\\d{2})/(\\d{2})/(\\d{4})$")
 	public void queOPrazoEhDia(int dia, int mes, int ano) throws Throwable {
@@ -82,4 +85,5 @@ public class AprenderCucumber {
 		assertEquals(data, dataFormatada);
 	}
 
+	Date entrega = new Date();
 }
