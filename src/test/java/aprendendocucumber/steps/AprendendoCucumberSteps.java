@@ -1,4 +1,4 @@
-package aprendendocucumber;
+package aprendendocucumber.steps;
 
 import static org.junit.Assert.assertEquals;
 
@@ -13,7 +13,7 @@ import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
 
-public class AprendendoCucumber {
+public class AprendendoCucumberSteps {
 
 	@Dado("^que criei o arquivo corretamente$")
 	public void queCrieiOArquivoCorretamente() throws Throwable {

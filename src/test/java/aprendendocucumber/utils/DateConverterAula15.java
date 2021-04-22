@@ -1,4 +1,4 @@
-package aprendendocucumber;
+package aprendendocucumber.utils;
 
 import java.text.DateFormat;
 import java.text.ParseException;
