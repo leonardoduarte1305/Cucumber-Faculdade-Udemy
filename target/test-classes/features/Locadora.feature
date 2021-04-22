@@ -6,11 +6,11 @@ Funcionalidade: Gerenciamento de locadora
 
   Cenario: Deve alugar filme com sucesso
     Dado um filme com estoque de 2 unidades
-    E que o preco de aluguel seja R$ 3,00
+    E que o preco do aluguel seja R$ 3,00
     Quando alugar
-    Entao o preco do qluguel sera R$ 3,00
+    Entao o preco do aluguel sera R$ 3,00
     E a data de entrega sera no da seguinte
-    E o estoque do filme será 1 unidade
+    E o estoque do filme sera 1 unidades
 
   Cenario: Nao deve alugar filme sem estoque
     Dado um filme com estoque de 0 unidades
