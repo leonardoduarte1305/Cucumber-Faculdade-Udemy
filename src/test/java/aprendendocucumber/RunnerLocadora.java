@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 		dryRun = false, //
 		strict = false, //
 		monochrome = true, //
-		tags = "~@ignore", //
+		tags = {}, //
 		plugin = "pretty", //
 		snippets = SnippetType.CAMELCASE, //
 		features = "src/test/resources/features/Locadora.feature") //
