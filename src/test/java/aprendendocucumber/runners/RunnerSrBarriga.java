@@ -8,12 +8,14 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 
 @RunWith(Cucumber.class)
 @CucumberOptions( //
-		dryRun = false, //
+		features = "src/test/resources/features/SrBarriga.feature", //
+		glue = { "aprendendocucumber.steps" }, //
+		tags = "not @Ignore", //
+		plugin = "pretty", // "html:target/report-html", "json:target/report.json" }, //
 		monochrome = true, //
-		plugin = { "pretty" }, // , "html:target/report-html", "json:target/report.json" }, //
 		snippets = SnippetType.CAMELCASE, //
-		features = "src\\test\\resources\\features\\SrBarriga.feature", //
-		glue = { "aprendendocucumber.utils", "aprendendocucumber.steps" } //
+		dryRun = false, //
+		strict = false //
 ) //
 public class RunnerSrBarriga {
 

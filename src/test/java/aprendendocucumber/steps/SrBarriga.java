@@ -3,8 +3,8 @@ package aprendendocucumber.steps;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import cucumber.api.java.pt.Entao;
 import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 
 public class SrBarriga {
@@ -57,15 +57,22 @@ public class SrBarriga {
 		throw new cucumber.api.PendingException();
 	}
 
+	@Quando("informo a conta {string}")
+	public void informoAConta(String string) {
+		// Write code here that turns the phrase above into concrete actions
+		throw new cucumber.api.PendingException();
+	}
+
 	@Quando("seleciono Salvar")
 	public void selecionoSalvar() {
 		// Write code here that turns the phrase above into concrete actions
 		throw new cucumber.api.PendingException();
 	}
 
-	@Entao("sou notificar que o nome da conta eh obrigatorio")
-	public void souNotificarQueONomeDaContaEhObrigatorio() {
+	@Entao("a conta eh inserida com sucesso")
+	public void aContaEhInseridaComSucesso() {
 		// Write code here that turns the phrase above into concrete actions
 		throw new cucumber.api.PendingException();
 	}
+
 }

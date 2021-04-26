@@ -48,19 +48,19 @@ public class AprendendoCucumber {
 
 	// =========================================================================================================
 
-	@Dado("que o prazo eh dia {data}")
-	public void queOPrazoEhDia(Date data) throws Throwable {
-		entrega = data;
-	} // -> Outra forma de fazer o método abaixo.
+//	@Dado("que o prazo eh dia {data}")
+//	public void queOPrazoEhDia(Date data) throws Throwable {
+//		entrega = data;
+//	} // -> Outra forma de fazer o método abaixo.
 
-//	@Dado("^que o prazo eh dia (\\d{2})/(\\d{2})/(\\d{4})$")
-//	public void queOPrazoEhDia(int dia, int mes, int ano) throws Throwable {
-//		Calendar cal = Calendar.getInstance();
-//		cal.set(Calendar.DAY_OF_MONTH, dia);
-//		cal.set(Calendar.MONTH, mes - 1);
-//		cal.set(Calendar.YEAR, ano);
-//		entrega = cal.getTime();
-//	}
+	@Dado("^que o prazo eh dia (\\d{2})/(\\d{2})/(\\d{4})$")
+	public void queOPrazoEhDia(int dia, int mes, int ano) throws Throwable {
+		Calendar cal = Calendar.getInstance();
+		cal.set(Calendar.DAY_OF_MONTH, dia);
+		cal.set(Calendar.MONTH, mes - 1);
+		cal.set(Calendar.YEAR, ano);
+		entrega = cal.getTime();
+	}
 
 	@Quando("^a entrega atrasar (\\d+) (dia|dias|mes|meses)$")
 	public void aEntregaAtrasarDias(int arg1, String tempo) throws Throwable {

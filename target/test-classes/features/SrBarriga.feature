@@ -4,7 +4,7 @@ Funcionalidade: Cadastro de contas
   Gostaria de cadastrar contas
   Para que eu possa distribuir meu dinheiro de uma forma mais organizada
 
-  Esquema do Cenario: Deve inserir uma conta com sucesso
+  Cenario: Deve inserir uma conta com sucesso
     Dado que estou acessando a aplicacao
     Quando informo o usuario "leonardoduarte1305@gmail.com"
     E a senha "123456"
@@ -15,7 +15,7 @@ Funcionalidade: Cadastro de contas
     E informo a conta "Conta de Testes"
     E seleciono Salvar
     Entao a conta eh inserida com sucesso
-
+@Ignore
   Cenario: Nao deve inserir uma conta sem nome
     Dado que estou acessando a aplicacao
     Quando informo o usuario "leonardoduarte1305@gmail.com"
@@ -26,7 +26,7 @@ Funcionalidade: Cadastro de contas
     E seleciono Adicionar
     E seleciono Salvar
     Entao sou notificar que o nome da conta eh obrigatorio
-
+@Ignore
   Cenario: Nao deve inserir uma conta com nome ja existente
     Dado que estou acessando a aplicacao
     Quando informo o usuario "leonardoduarte1305@gmail.com"
