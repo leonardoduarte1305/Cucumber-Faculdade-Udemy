@@ -1,13 +1,13 @@
 package aprendendocucumber.utils;
 
 import java.text.DateFormat;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import cucumber.api.Transformer;
+import io.cucumber.core.gherkin.messages.internal.gherkin.internal.com.eclipsesource.json.ParseException;
+import io.cucumber.cucumberexpressions.Transformer;
 
-public class DateConverterAula15 extends Transformer<Date> {
+public class DateConverterAula15 implements Transformer<Date> {
 
 	@Override
 	public Date transform(String value) {
@@ -16,10 +16,9 @@ public class DateConverterAula15 extends Transformer<Date> {
 		try {
 			Date retorno = format.parse(value);
 			return retorno;
-		} catch (ParseException e) {
+		} catch (ParseException | java.text.ParseException e) {
 			e.printStackTrace();
 			return null;
 		}
 	}
-
 }

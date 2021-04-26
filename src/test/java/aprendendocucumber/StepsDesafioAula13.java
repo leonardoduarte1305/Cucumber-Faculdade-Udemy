@@ -1,8 +1,8 @@
 package aprendendocucumber;
 
-import cucumber.api.java.pt.Dado;
-import cucumber.api.java.pt.Entao;
-import cucumber.api.java.pt.Quando;
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.Entao;
+import io.cucumber.java.pt.Quando;
 
 public class StepsDesafioAula13 {
 

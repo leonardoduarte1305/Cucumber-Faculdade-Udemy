@@ -7,7 +7,7 @@ public class NotaDeAluguel {
 	private double preco;
 	private Date dataEntrega;
 	private int quantidade;
-	private String tipoAluguel;
+	private TipoAluguel tipoAluguel;
 	private int pontuacao;
 
 	public double getPreco() {
@@ -26,7 +26,7 @@ public class NotaDeAluguel {
 		this.dataEntrega = date;
 	}
 
-	public void setTipoAluguel(String tipoAluguel) {
+	public void setTipoAluguel(TipoAluguel tipoAluguel) {
 		this.tipoAluguel = tipoAluguel;
 	}
 

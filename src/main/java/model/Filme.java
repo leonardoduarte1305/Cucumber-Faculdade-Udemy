@@ -2,7 +2,6 @@ package model;
 
 public class Filme {
 
-	private String nome;
 	private int estoque;
 	private double precoDoAluguel;
 

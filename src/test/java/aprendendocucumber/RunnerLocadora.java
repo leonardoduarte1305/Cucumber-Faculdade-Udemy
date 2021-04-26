@@ -2,16 +2,15 @@ package aprendendocucumber;
 
 import org.junit.runner.RunWith;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.SnippetType;
-import cucumber.api.junit.Cucumber;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import io.cucumber.junit.CucumberOptions.SnippetType;
 
 @RunWith(Cucumber.class)
 @CucumberOptions( //
 		dryRun = false, //
-		strict = false, //
 		monochrome = true, //
-		tags = {}, //
+		publish = true, //
 		plugin = "pretty", //
 		snippets = SnippetType.CAMELCASE, //
 		features = "src/test/resources/features/Locadora.feature") //

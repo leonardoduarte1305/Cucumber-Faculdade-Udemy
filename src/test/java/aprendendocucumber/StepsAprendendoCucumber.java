@@ -9,9 +9,9 @@ import java.util.Date;
 
 import org.junit.Assert;
 
-import cucumber.api.java.pt.Dado;
-import cucumber.api.java.pt.Entao;
-import cucumber.api.java.pt.Quando;
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.Entao;
+import io.cucumber.java.pt.Quando;
 
 public class StepsAprendendoCucumber {
 
