@@ -17,10 +17,10 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 @CucumberOptions( //
 		dryRun = false, //
 		monochrome = true, //
-//		tags = "~@ignore", //
-		plugin = { "pretty" }, //
+		tags = "~@ignore", //
+		plugin = "pretty", //
 		snippets = SnippetType.CAMELCASE, //
-		features = "src/test/resources/features/DesafioAula13.feature") //
+		features = "src/test/resources/features/") //
 public class RunnerDesafioAula13 {
 
 }

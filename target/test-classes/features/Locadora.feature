@@ -10,7 +10,7 @@ Funcionalidade: Gerenciamento de locadora
       | preco   |     3 |
       | tipo    | comum |
     Quando alugar
-    Entao o preco do aluguel sera R$ 3.00
+    Entao o preco do aluguel sera R$ 3,00
     E a data de entrega sera em 1 dia
     E o estoque do filme sera 1 unidades
 

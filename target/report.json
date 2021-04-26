@@ -1,1 +1,451 @@
-[]
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-26T12:10:03.412Z",
+        "line": 7,
+        "name": "Deve alugar filme com DataTable",
+        "description": "",
+        "id": "gerenciamento-de-locadora;deve-alugar-filme-com-datatable",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "um filme",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "estoque",
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "preco",
+                  "3"
+                ]
+              },
+              {
+                "cells": [
+                  "tipo",
+                  "comum"
+                ]
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "alugar",
+            "match": {},
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "o preco do aluguel sera R$ 3,00",
+            "match": {},
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "a data de entrega sera em 1 dia",
+            "match": {},
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "o estoque do filme sera 1 unidades",
+            "match": {},
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-26T12:10:03.644Z",
+        "line": 17,
+        "name": "Nao deve alugar filme sem estoque",
+        "description": "",
+        "id": "gerenciamento-de-locadora;nao-deve-alugar-filme-sem-estoque",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "um filme com estoque de 0 unidades",
+            "match": {},
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "alugar",
+            "match": {},
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "nao sera possivel por falta de estoque",
+            "match": {},
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "o estoque do filme sera 0 unidades",
+            "match": {},
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-26T12:10:03.681Z",
+        "line": 34,
+        "name": "Deve dar condicoes conforme o tipo de aluguel",
+        "description": "",
+        "id": "gerenciamento-de-locadora;deve-dar-condicoes-conforme-o-tipo-de-aluguel;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "um filme com estoque de 2 unidades",
+            "match": {},
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "que o preco do aluguel seja R$ 4",
+            "match": {},
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "que o tipo do aluguel seja extendido",
+            "match": {},
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "alugar",
+            "match": {},
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "o preco do aluguel sera R$ 8",
+            "match": {},
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "a data de entrega sera em 3 dias",
+            "match": {},
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "a pontuacao recebida sera de 2 pontos",
+            "match": {},
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-26T12:10:03.714Z",
+        "line": 35,
+        "name": "Deve dar condicoes conforme o tipo de aluguel",
+        "description": "",
+        "id": "gerenciamento-de-locadora;deve-dar-condicoes-conforme-o-tipo-de-aluguel;;3",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "um filme com estoque de 2 unidades",
+            "match": {},
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "que o preco do aluguel seja R$ 4",
+            "match": {},
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "que o tipo do aluguel seja comum",
+            "match": {},
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "alugar",
+            "match": {},
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "o preco do aluguel sera R$ 4",
+            "match": {},
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "a data de entrega sera em 1 dias",
+            "match": {},
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "a pontuacao recebida sera de 1 pontos",
+            "match": {},
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-26T12:10:03.743Z",
+        "line": 36,
+        "name": "Deve dar condicoes conforme o tipo de aluguel",
+        "description": "",
+        "id": "gerenciamento-de-locadora;deve-dar-condicoes-conforme-o-tipo-de-aluguel;;4",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "um filme com estoque de 2 unidades",
+            "match": {},
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "que o preco do aluguel seja R$ 10",
+            "match": {},
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "que o tipo do aluguel seja extendido",
+            "match": {},
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "alugar",
+            "match": {},
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "o preco do aluguel sera R$ 20",
+            "match": {},
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "a data de entrega sera em 3 dias",
+            "match": {},
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "a pontuacao recebida sera de 2 pontos",
+            "match": {},
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-26T12:10:03.773Z",
+        "line": 37,
+        "name": "Deve dar condicoes conforme o tipo de aluguel",
+        "description": "",
+        "id": "gerenciamento-de-locadora;deve-dar-condicoes-conforme-o-tipo-de-aluguel;;5",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "um filme com estoque de 2 unidades",
+            "match": {},
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "que o preco do aluguel seja R$ 5",
+            "match": {},
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "que o tipo do aluguel seja semanal",
+            "match": {},
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "alugar",
+            "match": {},
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "o preco do aluguel sera R$ 15",
+            "match": {},
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "a data de entrega sera em 7 dias",
+            "match": {},
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "a pontuacao recebida sera de 3 pontos",
+            "match": {},
+            "keyword": "E "
+          }
+        ]
+      }
+    ],
+    "name": "Gerenciamento de locadora",
+    "description": "  Como um usu�rio\n  Eu quero cadastrar alugu�is de filmes\n  Para controlar pre�os e datas de entrega",
+    "id": "gerenciamento-de-locadora",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/Locadora.feature",
+    "tags": []
+  }
+]

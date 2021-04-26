@@ -10,7 +10,8 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 @CucumberOptions( //
 		dryRun = false, //
 		monochrome = true, //
-		plugin = { "pretty" }, // "html:target/report-html", "json:target/report.json"
+		publish = true, //
+		plugin = {"pretty", "html:target/report-html", "json:target/report.json"}, //
 		snippets = SnippetType.CAMELCASE, //
 		features = "src\\test\\resources\\features\\Locadora.feature") //
 public class RunnerLocadora {

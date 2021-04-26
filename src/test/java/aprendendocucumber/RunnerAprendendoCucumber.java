@@ -17,11 +17,11 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 @CucumberOptions( //
 		dryRun = false, //
 		monochrome = true, //
-		plugin = { "pretty" }, // "html:target/report-html", "json:target/report.json" 
-		snippets = SnippetType.CAMELCASE, //
+		plugin = "pretty", //
 		tags = "~@ignore", //
-		features = "src\\test\\resources\\features\\AprendendoCucumber.feature" //
-) //
+		snippets = SnippetType.CAMELCASE, //
+		features = ("src/test/resources/features/AprendendoCucumber.feature"), //
+		glue = ("src/test/java/aprendendocucumber/steps/AprendendoCucumberSteps.java")) //
 public class RunnerAprendendoCucumber {
 
 }
