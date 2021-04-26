@@ -1,4 +1,4 @@
-package aprendendocucumber;
+package aprendendocucumber.steps;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -18,7 +18,7 @@ import model.TipoAluguel;
 import service.AluguelService;
 import utils.DataUtil;
 
-public class StepsLocadora {
+public class Locadora {
 
 	private Filme filme;
 	private AluguelService serviceAluguel = new AluguelService();

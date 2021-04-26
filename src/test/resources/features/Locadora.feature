@@ -4,13 +4,13 @@ Funcionalidade: Gerenciamento de locadora
   Eu quero cadastrar aluguéis de filmes
   Para controlar preços e datas de entrega
 
-  Cenario: Deve alugar filme com DataTable
-    Dado um filme
+ Cenario: Deve alugar filme com DataTable
+   Dado um filme
       | estoque |     2 |
       | preco   |     3 |
       | tipo    | comum |
-    Quando alugar
-    Entao o preco do aluguel sera R$ 3,00
+   Quando alugar
+    Entao o preco do aluguel sera R$ 3
     E a data de entrega sera em 1 dia
     E o estoque do filme sera 1 unidades
 

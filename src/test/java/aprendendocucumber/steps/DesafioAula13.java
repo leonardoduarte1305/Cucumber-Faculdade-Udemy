@@ -1,10 +1,10 @@
-package aprendendocucumber;
+package aprendendocucumber.steps;
 
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 
-public class StepsDesafioAula13 {
+public class DesafioAula13 {
 
 	@Dado("^que o ticket( especial)? eh (A.\\d{3})$")
 	public void queOTicketEhAF(String arg1, String arg2) throws Throwable {

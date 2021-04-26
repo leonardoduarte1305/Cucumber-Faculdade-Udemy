@@ -1,6 +1,6 @@
 package model;
 
-import io.cucumber.java.PendingException;
+import cucumber.api.PendingException;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;

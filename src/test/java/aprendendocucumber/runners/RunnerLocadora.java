@@ -1,4 +1,4 @@
-package aprendendocucumber;
+package aprendendocucumber.runners;
 
 import org.junit.runner.RunWith;
 
@@ -10,10 +10,11 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 @CucumberOptions( //
 		dryRun = false, //
 		monochrome = true, //
-		publish = true, //
-		plugin = {"pretty", "html:target/report-html", "json:target/report.json"}, //
+		plugin = { "pretty" }, // , "html:target/report-html", "json:target/report.json"
 		snippets = SnippetType.CAMELCASE, //
-		features = "src\\test\\resources\\features\\Locadora.feature") //
+		features = "src\\test\\resources\\features\\Locadora.feature", //
+		glue = { "aprendendocucumber.utils", "aprendendocucumber.steps" } //
+) //
 public class RunnerLocadora {
 
 }
