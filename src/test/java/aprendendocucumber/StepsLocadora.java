@@ -7,11 +7,11 @@ import java.util.Map;
 
 import org.junit.Assert;
 
+import cucumber.api.DataTable;
+import cucumber.api.java.pt.Dado;
+import cucumber.api.java.pt.Entao;
+import cucumber.api.java.pt.Quando;
 import exceptions.FilmeSemEstoqueException;
-import io.cucumber.datatable.DataTable;
-import io.cucumber.java.pt.Dado;
-import io.cucumber.java.pt.Entao;
-import io.cucumber.java.pt.Quando;
 import model.Filme;
 import model.NotaDeAluguel;
 import model.TipoAluguel;

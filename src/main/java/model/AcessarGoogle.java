@@ -1,9 +1,9 @@
 package model;
 
-import io.cucumber.java.PendingException;
-import io.cucumber.java.pt.Dado;
-import io.cucumber.java.pt.Entao;
-import io.cucumber.java.pt.Quando;
+import cucumber.api.PendingException;
+import cucumber.api.java.pt.Dado;
+import cucumber.api.java.pt.Entao;
+import cucumber.api.java.pt.Quando;
 
 public class AcessarGoogle {
 

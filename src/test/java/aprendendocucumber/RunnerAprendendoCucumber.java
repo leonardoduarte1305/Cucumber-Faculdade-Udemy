@@ -2,9 +2,9 @@ package aprendendocucumber;
 
 import org.junit.runner.RunWith;
 
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
-import io.cucumber.junit.CucumberOptions.SnippetType;
+import cucumber.api.CucumberOptions;
+import cucumber.api.SnippetType;
+import cucumber.api.junit.Cucumber;
 
 //plugin = "pretty" = faz impressões no console
 //monochrome = true = deixa as impressões no console bonitas

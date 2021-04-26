@@ -7,8 +7,8 @@ Funcionalidade: Cadastro de contas
 
   Cenário: Deve inserir uma conta com sucesso
     Dado que estou acessando a aplicação
-    Quando informo o usuário "a@a"
-    E a senha "a"
+    Quando informo o usuário "leonardoduarte1305@gmail.com"
+    E a senha "123456"
     E seleciono entrar
     Então visualizo a página inicial
     Quando seleciono Contas
@@ -17,21 +17,23 @@ Funcionalidade: Cadastro de contas
     E seleciono Salvar
     Então a conta é inserida com sucesso
 
+  @ignore
   Cenário: Não deve inserir uma conta sem nome
     Dado que estou acessando a aplicação
-    Quando informo o usuário "a@a"
-    E a senha "a"
+    Quando informo o usuário "leonardoduarte1305@gmail.com"
+    E a senha "123456"
     E seleciono entrar
     Então visualizo a página inicial
     Quando seleciono Contas
     E seleciono Adicionar
     E seleciono Salvar
-    Então sou notificar que o nome da conta é obrigatório
+    Então sou notificado que o nome da conta é obrigatório
 
+  @ignore
   Cenário: Não deve inserir uma conta com nome já existente
     Dado que estou acessando a aplicação
-    Quando informo o usuário "a@a"
-    E a senha "a"
+    Quando informo o usuário "leonardoduarte1305@gmail.com"
+    E a senha "123456"
     E seleciono entrar
     Então visualizo a página inicial
     Quando seleciono Contas

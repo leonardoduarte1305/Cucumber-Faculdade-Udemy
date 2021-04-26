@@ -1,8 +1,8 @@
-package stepdefinitions;
+package aulasAngelica;
 
 import org.junit.runner.RunWith;
 
-import io.cucumber.junit.Cucumber;
+import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 //@CucumberOptions(features = "/src/main/java/stepdefinitions", glue = "") 
