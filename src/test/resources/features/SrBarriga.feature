@@ -6,30 +6,30 @@ Funcionalidade: Cadastro de contas
 
   Cenario: Deve inserir uma conta com sucesso
     Dado que estou acessando a aplicacao
-    Quando informo o usuario "leonardoduarte1305@gmail.com"
+    Quando informo o usuario "leonardoduarte13052@gmail.com"
     E a senha "123456"
     E seleciono entrar
     Entao visualizo a pagina inicial
     Quando seleciono Contas
     E seleciono Adicionar
-    E informo a conta "Conta de Testes"
+    E informo a conta "testando12"
     E seleciono Salvar
     Entao a conta eh inserida com sucesso
-@Ignore
+
   Cenario: Nao deve inserir uma conta sem nome
     Dado que estou acessando a aplicacao
-    Quando informo o usuario "leonardoduarte1305@gmail.com"
+    Quando informo o usuario "leonardoduarte13052@gmail.com"
     E a senha "123456"
     E seleciono entrar
     Entao visualizo a pagina inicial
     Quando seleciono Contas
     E seleciono Adicionar
     E seleciono Salvar
-    Entao sou notificar que o nome da conta eh obrigatorio
-@Ignore
+    Entao sou notificado que o nome da conta eh obrigatorio
+
   Cenario: Nao deve inserir uma conta com nome ja existente
     Dado que estou acessando a aplicacao
-    Quando informo o usuario "leonardoduarte1305@gmail.com"
+    Quando informo o usuario "leonardoduarte13052@gmail.com"
     E a senha "123456"
     E seleciono entrar
     Entao visualizo a pagina inicial

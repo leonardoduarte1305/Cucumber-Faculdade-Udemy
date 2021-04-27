@@ -1,4 +1,4 @@
-package aprendendocucumber.runners;
+package aulasangelica.runner;
 
 import org.junit.runner.RunWith;
 
@@ -15,6 +15,6 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		features = "src\\test\\java\\stepdefinitions\\AcessarGoogle.feature", //
 		glue = { "stepdefinitions" } //
 ) //
-public class RunnerLocadora {
+public class AcessarGoogleRunner {
 
 }

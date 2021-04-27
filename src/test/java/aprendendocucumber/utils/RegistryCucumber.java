@@ -20,7 +20,6 @@ public class RegistryCucumber implements TypeRegistryConfigurer {
 	public void configureTypeRegistry(TypeRegistry typeRegistry) {
 		typeRegistry.defineParameterType(new ParameterType<>("data", ".*", Date.class, (String s) -> {
 			DateFormat format = new SimpleDateFormat("dd/MM/yyyy");
-
 			try {
 				Date retorno = format.parse(s);
 				return retorno;
@@ -29,7 +28,5 @@ public class RegistryCucumber implements TypeRegistryConfigurer {
 				return null;
 			}
 		}));
-
 	}
-
 }
