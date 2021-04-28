@@ -8,12 +8,12 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 
 @RunWith(Cucumber.class)
 @CucumberOptions( //
-		features = "src/test/resources/features/TestarNavegador.feature", //
+		features = "src/test/resources/features/Componentes.feature", //
 		glue = "aulasangelica.steps", //
 		monochrome = true, //
 		plugin = "pretty", //
 		snippets = SnippetType.CAMELCASE //
 ) //
-public class TestarNavegadorRunner {
+public class ComponentesRunner {
 
 }

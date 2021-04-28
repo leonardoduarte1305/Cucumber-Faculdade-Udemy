@@ -10,20 +10,16 @@ public class TestarNavegadorStep {
 	private Componentes componentes = new Componentes();
 
 	@Dado("que instalei o drive")
-	public void que_instalei_o() {
-		componentes.inicializar();
-
+	public void queInstaleiODrive() {
 	}
 
 	@Quando("instancar chrome-driver")
-	public void instancar_chrome_driver() {
-		// Write code here that turns the phrase above into concrete actions
-				throw new cucumber.api.PendingException();
+	public void instancarChromeDriver() {
+		componentes.inicializar();
 	}
 
 	@Entao("o navegador Google Chrome deve abrir")
-	public void o_navegador_Google_Chrome_deve_abrir() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new cucumber.api.PendingException();
+	public void oNavegadorGoogleChromeDeveAbrir() {
+		componentes.fechar();
 	}
 }

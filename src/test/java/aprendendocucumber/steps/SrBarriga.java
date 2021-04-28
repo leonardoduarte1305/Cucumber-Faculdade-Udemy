@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
@@ -12,6 +14,16 @@ import io.cucumber.java.pt.Quando;
 public class SrBarriga {
 
 	private WebDriver driver;
+
+	@Before
+	public void antes() {
+		System.out.println("Iniciando teste!");
+	}
+
+	@After
+	public void fecharBrowser() {
+		driver.quit();
+	}
 
 	@Dado("que estou acessando a aplicacao")
 	public void queEstouAcessandoAAplicacao() {
@@ -78,4 +90,12 @@ public class SrBarriga {
 		String text = driver.findElement(By.xpath("//div[@class='alert alert-danger']")).getText();
 		Assert.assertEquals("Já existe uma conta com esse nome!", text);
 	}
+
+	@Entao("recebo uma {string}")
+	public void receboUma(String string) {
+		String text = driver.findElement(By.xpath("//div[starts-with(@class,'alert alert-')]")).getText();
+		
+		Assert.assertEquals(string, text);
+	}
+
 }
