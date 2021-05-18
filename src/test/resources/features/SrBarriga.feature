@@ -12,18 +12,20 @@ Funcionalidade: Cadastro de contas
     Entao visualizo a pagina inicial
     Quando seleciono Contas
     E seleciono Adicionar
-@Ignore
+
+  @Ignore
   Cenario: Deve inserir uma conta com sucesso
     E informo a conta "Conta de Teste"
     E seleciono Salvar
     Entao a conta eh inserida com sucesso
 
-@Ignore
+  @Ignore
   Cenario: Nao deve inserir uma conta sem nome
     E informo a conta ""
     E seleciono Salvar
     Entao sou notificado que o nome da conta eh obrigatorio
-@Ignore
+
+  @Ignore
   Cenario: Nao deve inserir uma conta com nome ja existente
     E informo a conta "Conta mesmo nome"
     E seleciono Salvar

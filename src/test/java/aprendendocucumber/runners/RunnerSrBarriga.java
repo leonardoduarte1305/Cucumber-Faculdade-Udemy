@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 @RunWith(Cucumber.class)
 @CucumberOptions( //
 		features = "src/test/resources/features/SrBarriga.feature", //
-		glue = { "aprendendocucumber.steps" }, //
+		glue = { "aprendendocucumber.steps", "aprendendocucumber.utils" }, //
 		tags = "not @Ignore", //
 		plugin = "pretty", // "html:target/report-html", "json:target/report.json" }, //
 		monochrome = true, //

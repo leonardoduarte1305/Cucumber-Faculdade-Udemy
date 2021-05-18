@@ -15,9 +15,9 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 
 @RunWith(Cucumber.class)
 @CucumberOptions( //
-		dryRun = false, //
+		dryRun = true, //
 		monochrome = true, //
-		tags = "not @ignore", //
+		tags = "not @Ignore", //
 		plugin = "pretty", //
 		snippets = SnippetType.CAMELCASE, //
 		features = "src/test/resources/features/DesafioAula13.feature", //

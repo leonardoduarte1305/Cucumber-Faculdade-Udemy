@@ -1,10 +1,17 @@
 package aprendendocucumber.steps;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.cucumber.core.api.Scenario;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.pt.Dado;
@@ -20,7 +27,18 @@ public class SrBarriga {
 		System.out.println("Iniciando teste!");
 	}
 
-	@After
+	@After(order = 1)
+	public void screenShot(Scenario cenario) {
+		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+
+		try { //|"file:///" + |
+			FileUtils.copyFile(file, new File(System.getProperty("user.dir") + "\\target\\screenshot\\" + cenario.getId() + ".jpg"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@After(order = 0)
 	public void fecharBrowser() {
 		driver.quit();
 	}
@@ -94,7 +112,7 @@ public class SrBarriga {
 	@Entao("recebo uma {string}")
 	public void receboUma(String string) {
 		String text = driver.findElement(By.xpath("//div[starts-with(@class,'alert alert-')]")).getText();
-		
+
 		Assert.assertEquals(string, text);
 	}
 

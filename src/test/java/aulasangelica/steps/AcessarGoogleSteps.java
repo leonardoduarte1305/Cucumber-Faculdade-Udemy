@@ -22,13 +22,12 @@ public class AcessarGoogleSteps {
 
 	@Quando("acessei o site do Google")
 	public void acesseiOSiteDoGoogle() {
-		String text = driver.findElement(By.id("SIvCob")).getText();
-		Assert.assertEquals("Disponibilizao pelo Google em: English", text);
+		String text = driver.findElement(By.xpath("//div[starts-with(@class, 'gb_4')]")).getText();
+		Assert.assertEquals("Fazer login", text);
 	}
 
 	@Entao("a pagina abriu")
 	public void aPaginaAbriu() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new cucumber.api.PendingException();
+		//
 	}
 }

@@ -1,6 +1,6 @@
 package aulasangelica.steps;
 
-import aprendendocucumber.utils.Componentes;
+import aulasangelica.utils.Componentes;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;

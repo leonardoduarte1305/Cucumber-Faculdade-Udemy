@@ -4,12 +4,12 @@ Funcionalidade: Gerenciamento de locadora
   Eu quero cadastrar aluguéis de filmes
   Para controlar preços e datas de entrega
 
- Cenario: Deve alugar filme com DataTable
-   Dado um filme
+  Cenario: Deve alugar filme com DataTable
+    Dado um filme
       | estoque |     2 |
       | preco   |     3 |
       | tipo    | comum |
-   Quando alugar
+    Quando alugar
     Entao o preco do aluguel sera R$ 3
     E a data de entrega sera em 1 dia
     E o estoque do filme sera 1 unidades
@@ -35,20 +35,21 @@ Funcionalidade: Gerenciamento de locadora
       |     4 | comum     |     4 |       1 |         1 |
       |    10 | extendido |    20 |       3 |         2 |
       |     5 | semanal   |    15 |       7 |         3 |
-#  Cenario: Deve dar condicoes especiais para categoria extendida
-#    Dado um filme com estoque de 2 unidades
-#    E que o preco do aluguel seja R$ 4,00
-#    E que o tipo do aluguel seja extendido
-#    Quando alugar
-#    Entao o preco do aluguel sera R$ 8,00
-#    E a data de entrega sera em 3 dias
-#    E a pontuacao recebida sera de 2 pontos
-#
-#  Cenario: Deve alugar para categoria comum
-#    Dado um filme com estoque de 2 unidades
-#    E que o preco do aluguel seja R$ 4,00
-#    E que o tipo do aluguel seja comum
-#    Quando alugar
-#    Entao o preco do aluguel sera R$ 4,00
-#    E a data de entrega sera em 1 dia
-#    E a pontuacao recebida sera de 1 ponto
+
+  Cenario: Deve dar condicoes especiais para categoria extendida
+    Dado um filme com estoque de 2 unidades
+    E que o preco do aluguel seja R$ 4,00
+    E que o tipo do aluguel seja extendido
+    Quando alugar
+    Entao o preco do aluguel sera R$ 8,00
+    E a data de entrega sera em 3 dias
+    E a pontuacao recebida sera de 2 pontos
+
+  Cenario: Deve alugar para categoria comum
+    Dado um filme com estoque de 2 unidades
+    E que o preco do aluguel seja R$ 4,00
+    E que o tipo do aluguel seja comum
+    Quando alugar
+    Entao o preco do aluguel sera R$ 4,00
+    E a data de entrega sera em 1 dia
+    E a pontuacao recebida sera de 1 ponto

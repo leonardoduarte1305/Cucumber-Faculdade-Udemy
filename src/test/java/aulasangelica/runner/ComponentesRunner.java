@@ -12,8 +12,10 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		glue = "aulasangelica.steps", //
 		monochrome = true, //
 		plugin = "pretty", //
-		snippets = SnippetType.CAMELCASE //
-) //
+		snippets = SnippetType.CAMELCASE, //
+		tags = "@Validar_elemento_combo_multiplo", //
+		dryRun = false //
+)
 public class ComponentesRunner {
 
 }
