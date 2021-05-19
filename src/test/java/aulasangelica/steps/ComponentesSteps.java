@@ -20,10 +20,10 @@ public class ComponentesSteps {
 		driver.quit();
 	}
 
-	@Dado("que o usuario acessou o arquivo Campo de Treinamento")
-	public void queOUsuarioAcessouOArquivoCampoDeTreinamento() {
-		componente.inicializar(arquivo);
-	}
+//	@Dado("que o usuario acessou o arquivo Campo de Treinamento")
+//	public void queOUsuarioAcessouOArquivoCampoDeTreinamento() {
+//		componente.inicializar(arquivo);
+//	}
 
 	@Quando("o usuario digitar Batatinha")
 	public void oUsuarioDigitarBatatinha() {
@@ -97,5 +97,45 @@ public class ComponentesSteps {
 	@Entao("o valor deve aparecer selecionado no elemento combobox")
 	public void oValorDeveAparecerSelecionadoNoElementoCombobox() {
 		componente.verificarSeOValorApareceSelecionado();
+	}
+
+	@Quando("o usuario clicar no botao Clique Me")
+	public void oUsuarioClicarNoBotaoCliqueMe() {
+		componente.clicarNoBotaoCliqueMe();
+	}
+
+	@Entao("o nome do botao deve ser alterado para Obrigado!")
+	public void oNomeDoBotaoDeveSerAlteradoParaObrigado() {
+		componente.verificarOBotaoCliqueMeAposOClique();
+	}
+
+	@Quando("o usuario clicar no botao alert")
+	public void oUsuarioClicarNoBotaoAlert() {
+		componente.clicarNoAlert();
+	}
+
+	@Entao("deve aparecer a mensagem de feedback Alert simples")
+	public void deveAparecerAMensagemDeFeedbackAlertSimples() {
+		componente.verificarMensagem();
+	}
+
+	@Quando("o usuario clicar no botao Confirm")
+	public void oUsuarioClicarNoBotaoConfirm() {
+		componente.clicarNoBotaoConfirm();
+	}
+
+	@Entao("deve aparecer a mensagem de feedback Confirm Simples")
+	public void deveAparecerAMensagemDeFeedbackConfirmSimples() {
+		componente.verificarMensagemDeConfirmSimples();
+	}
+
+	@Entao("deve clicar em Ok")
+	public void deveClicarEmOk() {
+		componente.clicarEmOk();
+	}
+
+	@Entao("deve aparecer a mensagem de feedback Confirmado")
+	public void deveAparecerAMensagemDeFeedbackConfirmado() {
+		componente.verificarMensagemDeConfirm();
 	}
 }

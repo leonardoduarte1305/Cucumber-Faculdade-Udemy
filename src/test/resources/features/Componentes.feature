@@ -17,18 +17,6 @@ Funcionalidade: Acessar varios componentes html
       | RadioButton |
       | CheckBox    |
 
-  #  @Ignore
-  #  Esquema do Cenario: Deve testar o campo nome
-  #    E informo o nome "<nome>"
-  #    E informo o sobrenome "<sobrenome>"
-  #    E seleciono Cadastrar
-  #    Entao recebo uma mensagem: "<mensagem>"
-  #
-  #    Exemplos:
-  #      | nome     | sobrenome | mensagem                 |
-  #      | Leopoldo |           | Sobrenome eh obrigatorio |
-  #      |          | Felpudo   | Nome eh obrigatorio      |
-  #      | Leonel   | Fajuto    | Sexo eh obrigatorio      |
   Cenario: Validar elemento combobox escolaridade
     Quando o usuario selecionar um valor no elemento combo
     Entao o valor aparece selecionado
@@ -45,7 +33,22 @@ Funcionalidade: Acessar varios componentes html
     Quando o usuario selecionar Mestrado
     Entao a opcao Mestrado deve estar selecionada
 
-	@Validar_elemento_combo_multiplo
   Cenario: Validar elemento Combo Multiplo
     Quando o usuario selecionar um elemento campo de multipla escolha
-    Entao o valor deve aparecer selecionado no elemento combobox 
+    Entao o valor deve aparecer selecionado no elemento combobox
+
+  Cenario: Interagir com o botao
+    Quando o usuario clicar no botao Clique Me
+    Entao o nome do botao deve ser alterado para Obrigado!
+
+  Cenario: Interagir com alert simples
+    Quando o usuario clicar no botao alert
+    Entao deve aparecer a mensagem de feedback Alert simples
+
+  
+  Cenario: Interagir com o confirm simples
+    Quando o usuario clicar no botao Confirm
+    Entao deve aparecer a mensagem de feedback Confirm Simples
+    Entao deve clicar em Ok
+    Entao deve aparecer a mensagem de feedback Confirmado
+    

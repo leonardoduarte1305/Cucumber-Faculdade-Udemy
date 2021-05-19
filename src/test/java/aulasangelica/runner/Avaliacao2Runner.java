@@ -8,14 +8,14 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 
 @RunWith(Cucumber.class)
 @CucumberOptions( //
-		features = "src/test/resources/features/Componentes.feature", //
+		features = "src/test/resources/features/Avaliacao2.feature", //
 		glue = "aulasangelica.steps", //
 		monochrome = true, //
 		plugin = "pretty", //
 		snippets = SnippetType.CAMELCASE, //
 		tags = "@EmAndamento", //
-		dryRun = true //
+		dryRun = false //
 )
-public class ComponentesRunner {
+public class Avaliacao2Runner {
 
 }

@@ -3,6 +3,7 @@ package aulasangelica.utils;
 import java.util.List;
 
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,6 +18,8 @@ public class Componentes {
 	private Select combo;
 	private List<WebElement> lista;
 	private String opcao;
+	private WebElement botao;
+	private Alert alerta;
 
 	public void inicializar() {
 		System.setProperty("webdriver.chrome.driver", "C:\\SeleniumDrivers\\chromedriver.exe");
@@ -132,6 +135,46 @@ public class Componentes {
 	public void verificarSeOValorApareceSelecionado() {
 		List<WebElement> lista = combo.getAllSelectedOptions();
 		Assert.assertEquals(2, lista.size());
+	}
 
+	public void clicarNoBotaoCliqueMe() {
+		botao = driver.findElement(By.id("buttonSimple"));
+
+	}
+
+	public void verificarOBotaoCliqueMeAposOClique() {
+		botao.click();
+		String clicado = botao.getAttribute("value");
+		Assert.assertEquals("Obrigado!", clicado);
+
+	}
+
+	public void clicarNoAlert() {
+		driver.findElement(By.id("Alert")).click();
+	}
+
+	public void verificarMensagem() {
+		alerta = driver.switchTo().alert();
+		Assert.assertEquals("Alert Simples", alerta.getText());
+	}
+
+	public void clicarNoBotaoConfirm() {
+		botao = driver.findElement(By.id("confirm"));
+		botao.click();
+	}
+
+	public void verificarMensagemDeConfirmSimples() {
+		alerta = driver.switchTo().alert();
+		Assert.assertEquals("Confirm Simples", alerta.getText());
+	}
+
+	public void clicarEmOk() {
+		driver.findElement(By.name("OK")).click();
+//		alerta = driver.switchTo().alert();
+	}
+
+	public void verificarMensagemDeConfirm() {
+		alerta = driver.switchTo().alert();
+		Assert.assertEquals("Confirmado", alerta.getText());
 	}
 }
